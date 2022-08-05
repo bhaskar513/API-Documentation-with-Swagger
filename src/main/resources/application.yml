@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+logging:
+  level:
+    root: ${LOGGING_LEVEL:INFO}
+    com.bhaskar.JWTDemo.JwtDemoApplication: INFO
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+jwt:
+  secret: secretkey123
